@@ -18,6 +18,11 @@
             body {
                 background-image: url(assets/under-construction-mobile.png);
             }
+
+            img{
+                width: 60px;
+                height: 60px;
+            }
         }
 
 
@@ -25,6 +30,11 @@
 
             body {
                 background-image: url(assets/under-construction-tab.png);
+            }
+            
+            img{
+                width: 70px;
+                height: 70px;
             }
         }
 
@@ -47,15 +57,27 @@
         }
 
         #social-links {
+            margin-top: 600px;
             height: 200px;
-            width: 200px;
-            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: repeat(3,max-content);
+            gap: 20px;
         }
+        #link{
+            height: 60px;
+            width: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
     </style>
 </head>
 
 <body>
     <div id="social-links">
+        <a href="tel:7224033433" id="link" style="background-image: url(assets/whatsapp.svg);" ></a>
+        <a href="https://www.instagram.com/bhawanidecorators/" id="link" style="background-image: url(assets/instagram.svg);" ></a>
+        <a href="mailto:bhdecoretors214@gmail.com" id="link" style="background-image: url(assets/mail.svg);" ></a>
     </div>
 </body>
 
