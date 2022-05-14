@@ -1,13 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/product&services.css">
     <title>Bhawani Decorators - Products & Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Used: Cinzel, Playfair Display, Montserrat, Inter -->
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
 </head>
-<body>
-    <header></header>
-    
+
+<body onload="getData()">
+    <header>
+        <img id="header-logo" src="assets/Logo.svg" alt="Bhawani Decorators Logo">
+        <img id="header-title" src="assets/Title.svg" alt="Title of Page">
+        <div id="header-nav">
+            <a class="nav-links" href="#">Services</a>&nbsp;&nbsp;
+            <a class="nav-links" href="#">Gallery</a>&nbsp;&nbsp;
+            <a class="nav-links" href="#">About Us</a>&nbsp;&nbsp;
+            <img id="burger-menu" src="assets/burget-menu.svg" alt="Burger Menu Icon">
+        </div>
+    </header>
+    <div id="hero-section">
+        <div id="hero-section-heading">
+            <img id="hero-section-logo" src="assets/hero-section-logo.svg">
+            <div id="services-title">Our Services</div>&nbsp;
+            <div id="services-subtitle">You can choose across various materials form our false ceiling according to your
+                taste,
+                requirements and budget.</div>
+        </div>
+    </div>
+    <div id="hero-divider"></div>
+    <div id="services">
+        <div class="service-cards">
+            <div class="service-card-texts">
+                <div class="service-card-title">Plaster Of Paris</div>
+                <div class="service-card-desc">Plaster of paris is the most popular choice for false ceiling. It can be
+                    crafted
+                    in
+                    stunning patterns with without
+                    wooden panels and light textures.</div>
+            </div>
+        </div>
+        <div class="service-cards">
+            <div class="service-card-texts">
+                <div class="service-card-title">Gypsum Board</div>
+                <div class="service-card-desc">Gypsum board is another popular choice for ceiling and offers a host of
+                    elegant
+                    designs. They are light weighted, could
+                    sustain ducting and easy to handle if you wish to play with the weight of room.</div>
+            </div>
+        </div>
+        <div class="service-cards">
+            <div class="service-card-texts">
+                <div class="service-card-title">Thermacol</div>
+                <div class="service-card-desc">Fitted with aluminium frames and it is one of the most economical false
+                    ceiling.
+                </div>
+            </div>
+        </div>
+        <div class="service-cards">
+            <div class="service-card-texts">
+                <div class="service-card-title">PVC</div>
+                <div class="service-card-desc">Made from the robust plastic. PVC is a low maintenance for ceiling
+                    variety. It
+                    stays for years and it is available in
+                    wide variety of designs and colours.</div>
+            </div>
+        </div>
+        <div class="service-cards">
+            <div class="service-card-texts">
+                <div class="service-card-title">T - Section</div>
+                <div class="service-card-desc">Our products are carved out of superior quality raw materials sourced
+                    from
+                    reliable vendors of the market. This product
+                    line caters approximately all needs and requirement related to this domain. We can see this kind of
+                    work in bank and
+                    office.</div>
+            </div>
+        </div>
+        <div class="service-cards">
+            <div class="service-card-texts">
+                <div class="service-card-title">Wood</div>
+                <div class="service-card-desc">Wooden false ceiling have excellent natural patterns and textures that
+                    can please
+                    the eye. Wood is a good material to
+                    work with wooden panels can come in the form of hollow blocks, boards or panels.</div>
+            </div>
+        </div>
+    </div>
+    <div id="our-products">
+        <div id="our-product-heading">
+            <div id="product-title">Our False Celing Products</div>&nbsp;
+            <div id="product-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie amet, semper
+                donec aliquet eget sed.</div>
+        </div>
+    </div>
+    <div id="all-products">
+        <div class="product-cards">
+            <div class="product-cards-name">Product Name <br><br>
+                <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores
+                    blanditiis molestias maxime fuga quae obcaecati consequuntur quia nostrum tempora mollitia quod
+                    error aliquam architecto sunt placeat, laborum ipsum beatae.</div>
+            </div>
+        </div>
+        <div class="product-cards">
+            <div class="product-cards-name">Product Name <br><br>
+                <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores
+                    blanditiis molestias maxime fuga quae obcaecati consequuntur quia nostrum tempora mollitia quod
+                    error aliquam architecto sunt placeat, laborum ipsum beatae.</div>
+            </div>
+        </div>
+        <div class="product-cards">
+            <div class="product-cards-name">Product Name <br><br>
+                <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores
+                    blanditiis molestias maxime fuga quae obcaecati consequuntur quia nostrum tempora mollitia quod
+                    error aliquam architecto sunt placeat, laborum ipsum beatae.</div>
+            </div>
+        </div>
+        <div class="product-cards">
+            <div class="product-cards-name">Product Name <br><br>
+                <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores
+                    blanditiis molestias maxime fuga quae obcaecati consequuntur quia nostrum tempora mollitia quod
+                    error aliquam architecto sunt placeat, laborum ipsum beatae.</div>
+            </div>
+        </div>
+        <div class="product-cards">
+            <div class="product-cards-name">Product Name <br><br>
+                <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores
+                    blanditiis molestias maxime fuga quae obcaecati consequuntur quia nostrum tempora mollitia quod
+                    error aliquam architecto sunt placeat, laborum ipsum beatae.</div>
+            </div>
+        </div>
+        <div class="product-cards">
+            <div class="product-cards-name">Product Name <br><br>
+                <div class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores
+                    blanditiis molestias maxime fuga quae obcaecati consequuntur quia nostrum tempora mollitia quod
+                    error aliquam architecto sunt placeat, laborum ipsum beatae.</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-title">BHAWANI DECORATORS</div>
+        <div id="footer-links">
+            <div id="contact">
+                <div id="location">
+                    <img id="contact-icon" src="assets/location.svg" alt="Location Icon" width="30px" height="30px" />
+                    <div id="contact-details">
+                        <div id="detail-title">Address</div>
+                        <div id="detail-subtitle">29 - B, RABINDRA SARANI, 3RD FLOOR, SUITE 11(W) KOLKATA - 700 073,
+                            WEST
+                            BENGAL, INDIA</div>
+                    </div>
+                </div>
+                <div id="call-us">
+                    <img id="contact-icon" src="assets/phone.svg" alt="Location Icon" width="30px" height="30px" />
+                    <div id="contact-details">
+                        <div id="detail-title">Call Us</div>
+                        <div id="detail-subtitle">+91-70001 62913</div>
+                    </div>
+                </div>
+                <div id="email-us">
+                    <img id="contact-icon" src="assets/email.svg" alt="Location Icon" width="30px" height="30px" />
+                    <div id="contact-details">
+                        <div id="detail-title">Email Us</div>
+                        <div id="detail-subtitle">sara.sanders@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div id="social-links">
+                <div id="social-links-title">Social Links</div>
+                <div id="whatsapp">
+                    <img id="social-icon" src="assets/whatsapp.svg" width="26" height="26">
+                    <a id="social-link-name" href="#">WhatsApp</a>
+                </div>
+                <div id="instagram">
+                    <img id="social-icon" src="assets/instagram.svg" width="26" height="26">
+                    <a id="social-link-name" href="#">Instagram</a>
+                </div>
+                <div id="facebook">
+                    <img id="social-icon" src="assets/facebook.svg" width="26" height="26">
+                    <a id="social-link-name" href="#">Facebook</a>
+                </div>
+            </div>
+            <div id="quick-links">
+                <a id="quick-links-title">Quick Links</a>
+                <a id="quick-link-name" href="">Home</a>
+                <a id="quick-link-name" href="">Contact Us</a>
+                <a id="quick-link-name" href="">Our Products</a>
+                <a id="quick-link-name" href="">About Us</a>
+                <a id="quick-link-name" href="">Our Services</a>
+            </div>
+        </div>
+        <div id="copyright-claims">copyright @2022 Bhawani Decorators, All Right Reserved. Design and Developed by
+            CreativeDroplets With GraphityFactory.</div>
+    </footer>
+    <script src="JavaScript/main.js"></script>
 </body>
+
 </html>
