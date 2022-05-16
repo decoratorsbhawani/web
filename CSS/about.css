@@ -19,7 +19,7 @@ html {
     font-size: 16px;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Header Starts Here */
 
@@ -159,7 +159,7 @@ header {
 
 #hero-section {
     height: 32.407vh;
-    background-image: url(/assets/services-page-image.png);
+    background-image: url(/assets/about-page-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -225,253 +225,299 @@ header {
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
 
-#services {
-    padding-inline-start: clamp(50px, 10vw, 16.458vw);
-    padding-inline-end: clamp(50px, 10vw, 16.458vw);
-    padding-block-start: 100px;
-    padding-block-end: 100px;
-    display: block;
-    background-image: url(/assets/services-page-patterns.png);
-    background-repeat: repeat-y;
-    /* background-position: center; */
+
+
+
+#about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
-.service-cards {
-    margin-block-start: 100px;
-    min-height: 200px;
-    max-height: 290px;
-    height: 26.851vh;
-    min-width: 650px;
-    max-width: 845px;
-    width: 44.01vw;
-    border: 1px solid var(--light-grey);
-    border-radius: 20px;
-    background-color: #fff;
-    background-image: url(/assets/temp-img.png);
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    transition: all .535s ease-out;
+#about-us {
+    text-align: center;
 }
 
-/* media query for services card */
-@media only screen and (max-width: 760px) {
-    .service-cards {
-        margin-block-start: 100px;
-        min-height: unset;
-        max-height: unset;
-        min-width: unset;
-        max-width: unset;
-        height: 500px;
-        width: 330px;
-        border: 1px solid var(--light-grey);
-        border-radius: 20px;
-        background-color: #fff;
-        background-image: url(/assets/temp-img.png);
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
-        background-size: 101%;
-        transition: all .535s ease-out;
-    }
+#about-us>p:first-child {
+    margin-top: 200px;
 }
 
-.service-cards:first-child {
-    margin-block-start: 0px;
-}
-
-.service-cards:nth-child(odd) {
-    margin-right: auto;
-}
-
-.service-cards:nth-child(even) {
-    margin-left: auto;
-}
-
-/* media query for service-cards alignment */
-@media only screen and (max-width: 760px) {
-    #services {
-        display: grid;
-        justify-content: center;
-    }
-}
-
-
-.service-card-texts {
-    width: 50%;
-    margin-inline-start: 330px;
-    padding-inline-start: clamp(20px, 1vw, 30px);
-    padding-inline-end: clamp(20px, 1vw, 30px);
-}
-
-/* media query for service-card-title */
-@media only screen and (max-width: 760px) {
-    .service-card-texts {
-        width: unset;
-        padding-inline-start: unset;
-        padding-inline-end: unset;
-        margin-inline-start: 20px;
-        margin-inline-end: 20px;
-        margin-block-start: 330px;
-    }
-}
-
-
-.service-card-title {
+#about-us p {
+    margin-inline-start: clamp(60px, 10vw, 350px);
+    margin-inline-end: clamp(100px, 10vw, 350px);
+    margin-bottom: 200px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: inherit;
     color: var(--dark-grey);
-    padding-top: 2.7vh;
+    line-height: 150%;
+    letter-spacing: 0.080em;
 }
 
-.service-card-desc {
-    padding-top: 2vh;
-    font-size: 1em;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+/* media query for about us paragraph */
+@media only screen and (max-width: 760px) {
+    #about-us p {
+        font-size: 1em;
+    }
 }
 
-/* media query for service-card-title service-card-desc  */
+#who-we-are {
+    margin: auto;
+    margin-inline-start: clamp(60px, 10vw, 250px);
+    margin-inline-end: clamp(60px, 10vw, 250px);
+    margin-bottom: 250px;
+}
+
+#who-we-are #heading {
+    margin-bottom: 150px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+
+/* media query for about us paragraph */
+@media only screen and (max-width: 1260px) {
+    #who-we-are #heading {
+        font-size: 3em;
+    }
+}
+
+/* media query for about us paragraph */
+@media only screen and (max-width: 900px) {
+    #who-we-are #heading {
+        font-size: 2.5em;
+    }
+}
+
+/* media query for about us paragraph */
+@media only screen and (max-width: 760px) {
+    #who-we-are #heading {
+        font-size: 2em;
+    }
+}
+
+#who-we-are #body {
+    display: flex;
+    align-items: center;
+}
+
+/* media query for who-we-are body */
+@media only screen and (max-width: 1260px) {
+    #who-we-are #body {
+        display: grid !important;
+    }
+}
+
+
+#who-we-are #body #details {
+    height: max-content;
+    display: grid;
+}
+
+#who-we-are #body #details #desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 150%;
+    letter-spacing: 0.080em;
+    color: var(--dark-grey);
+    margin-right: 80px;
+}
+
+/* media query for who-we-are desc */
+@media only screen and (max-width: 1260px) {
+    #who-we-are #body #details #desc {
+        text-align: center;
+        margin-right: 0px;
+    }
+}
+
+/* media query for who-we-are desc */
+@media only screen and (max-width: 760px) {
+    #who-we-are #body #details #desc {
+        font-size: 1em;
+    }
+}
+
+
+#who-we-are #body #details #contact-us-btn {
+    display: inline-flex;
+    width: 260px;
+    height: 70px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 150%;
+    letter-spacing: 0.040em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* media query for who-we-are contact-us-btn */
+@media only screen and (max-width: 1560px) {
+    #who-we-are #body #details #contact-us-btn {
+        width: 180px;
+        height: 60px;
+        font-size: 1.2em;
+    }
+}
+
+/* media query for who-we-are contact-us-btn */
+@media only screen and (max-width: 1260px) {
+    #who-we-are #body #details #contact-us-btn {
+        width: 180px;
+        height: 60px;
+        justify-self: center;
+    }
+}
+
+#who-we-are #body img {
+    width: 420px;
+    height: 560px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 4px 4px 25px 6px rgba(0, 0, 0, .30);
+}
+
+/* media query for who-we-are desc */
+@media only screen and (max-width: 1760px) {
+    #who-we-are #body img {
+        width: 320px;
+        height: 426px;
+    }
+}
+
+
+/* media query for who-we-are img */
+@media only screen and (max-width: 1260px) {
+    #who-we-are #body img {
+        width: 320px;
+        height: 426px;
+        margin-bottom: 100px;
+        justify-self: center;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
 
 @media only screen and (max-width: 760px) {
-    .service-card-title {
-        padding-top: 0;
-        font-size: 1.5em;
-    }
-
-    .service-card-desc {
-        font-size: .875em;
+    #who-we-are #body img {
+        width: 250px;
+        height: 334px;
     }
 }
 
-
-.service-cards:hover {
-    border: 1px solid white;
-    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, .3);
-    transition: all .350s ease-out;
-}
-
-#our-products {
-    height: 200px;
-    background-color: var(--accent-color);
+#who-we-are #body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 
-#all-products {
-    padding-block-start: 140px;
-    padding-block-end: 140px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    justify-items: center;
-    grid-column-gap: 50px;
-    row-gap: 100px;
+#why-us {
+    width: 74vw;
+    margin: auto;
+    margin-bottom: 250px;
 }
 
-/* media query for product cards */
-@media only screen and (max-width: 1260px) {
-    #all-products {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
-@media only screen and (max-width: 900px) {
-
-    #all-products {
-        grid-template-columns: 1fr;
-        grid-column-gap: clamp(80px, 2vw, 120px);
-        row-gap: clamp(80px, 2vw, 120px);
-    }
-}
-
-#our-product-heading {
+#why-us #heading {
+    margin-bottom: 150px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    font-weight: 600;
     text-align: center;
+    text-decoration: underline;
+    color: var(--accent-color);
 }
 
-#product-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    color: white;
-}
-
-#product-subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    color: white;
-    margin-inline-start: 20px;
-    margin-inline-end: 20px;
-}
-
-.product-cards {
-    height: 450px;
-    width: 400px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-color: #fff;
-    background-image: url(/assets/temp-product-img.png);
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, .35);
-    transition: all .350s ease-out;
-    display: flex;
-    justify-content: stretch;
-    align-items: end;
-    /* cursor: pointer; */
-}
-
-/* media query for product cards */
-@media only screen and (max-width: 1560px) {
-    .product-cards {
-        height: 350px;
-        width: 300px;
+/* media query for about us paragraph */
+@media only screen and (max-width: 1260px) {
+    #why-us #heading {
+        font-size: 3em;
     }
 }
 
-.product-cards-name {
-    height: 70px;
-    width: inherit;
-    background-color: #fff;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
-    padding-block-start: 10px;
+/* media query for about us paragraph */
+@media only screen and (max-width: 900px) {
+    #why-us #heading {
+        font-size: 2.5em;
+    }
+}
+
+/* media query for about us paragraph */
+@media only screen and (max-width: 760px) {
+    #why-us #heading {
+        font-size: 2em;
+    }
+}
+
+#why-us #body #list .list-items {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: 0.040em;
+}
+
+/* media query for who-we-are desc */
+@media only screen and (max-width: 760px) {
+    #why-us #body #list .list-items {
+        font-size: 1em;
+    }
+}
+
+
+.list-items:first-child {
+    margin-top: 0px;
+}
+
+.list-items {
+    margin-top: 60px;
+}
+
+/* media query for who-we-are desc */
+@media only screen and (max-width: 760px) {
+    #why-us #body #list .list-items {
+        margin-top: 20px;
+    }
+}
+
+
+ul {
+    /* Remove default bullets */
+    list-style: none;
+}
+
+ul li::before {
+
+    /* Add Unicode of the bullet */
+    content: 'o';
     font-weight: 400;
-    color: #000;
-    transition: all .350s ease-out;
-    user-select: none;
-}
 
-.product-desc {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: .8em;
-    padding-block-start: 8px;
-    color: transparent;
-    user-select: none;
-}
+    /* Color of the content -- bullet here */
+    color: var(--accent-color);
 
+    /* Required to add space between 
+        the bullet and the text */
+    display: inline-block;
 
+    /* Required to add space between
+        the bullet and the text */
+    width: 1.5em;
 
-.product-cards:active {
-    box-shadow: none;
-    /* cursor: pointer; */
-    transition: all .350s ease-out;
-}
-
-.product-cards:hover>.product-cards-name {
-    height: 150px;
-    transition: all .350s ease-out;
-}
-
-.product-cards:hover>.product-cards-name>.product-desc {
-    color: #000;
-    transition: all .250s ease-out;
-    transition-delay: .350s;
+    /* Required to add space between the
+        bullet and the text */
+    margin-left: -0.9em;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
