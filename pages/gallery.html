@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <link rel="stylesheet" href="../CSS/header&footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Used: Cinzel, Playfair Display, Montserrat, Inter -->
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+        <img id="header-logo" src="../assets/Logo.svg" alt="Bhawani Decorators Logo">
+        <img id="header-title" onclick="redirectHome()" src="../assets/Title.svg" alt="Title of Page">
+        <div id="header-nav">
+            <a class="nav-links" href="product&service.html">Services</a>&nbsp;&nbsp;
+            <a class="nav-links" href="gallery.html">Gallery</a>&nbsp;&nbsp;
+            <a class="nav-links" href="about.html">About Us</a>&nbsp;&nbsp;
+            <img id="burger-menu" src="../assets/burget-menu.svg" alt="Burger Menu Icon">
+        </div>
+    </header>
+
+    <div id="hero-section">
+        <div id="hero-section-heading">
+            <img id="hero-section-logo" src="../assets/hero-section-logo.svg">
+            <div id="services-title">Gallery</div>&nbsp;
+            <div id="services-subtitle">Some of our works are shown here, we hope you will like it.</div>
+        </div>
+    </div>
+    <div id="hero-divider"></div>
+
+    <div class="landscape-images">
+        <img src="../assets/Previous.svg" class="slide-btn slide-btn-left" onclick="plusDivs(-1)" />
+        <div class=".images-box">
+            <img class="mySlides" src="../assets/gallery-web-img-01.png" style="width:100%">
+            <img class="mySlides" src="../assets/gallery-web-img-02.png" style="width:100%">
+            <!-- <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+            <img class="mySlides" src="img_forest.jpg" style="width:100%"> -->
+        </div>
+        <img src="../assets/Next.svg" class="slide-btn slide-btn-right" onclick="plusDivs(1)" />
+    </div>
+
+    <div class="work-images-slideshow">
+        <div id="title">
+            <div id="text">Our Recent <br>
+                <p>Works</p>
+            </div>
+        </div>
+        <div class="portrait-images">
+            <img src="../assets/Previous.svg" class="slide-btn float-btn-left btn-main" onclick="workImage(-1)" />
+            <div class="portrait-images-box">
+                <img class="images first-image" src="assets/portrait-img-01.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-02.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-03.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-04.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-05.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-01.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-02.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-03.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-04.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-05.png" alt="Image">
+                <div class="btn-mobile" style="display: none;">
+                    <img src="../assets/Previous.svg" class="slide-btn float-btn-left" onclick="workImage(-1)" />
+                    <img src="../assets/Next.svg" class="slide-btn float-btn-right" onclick="workImage(1)" />
+                </div>
+            </div>
+            <img src="../assets/Next.svg" class="slide-btn float-btn-right btn-main" onclick="workImage(1)" />
+        </div>
+    </div>
+
+    <div class="product-images-slideshow">
+        <div id="title">
+            <div id="text">Some of Our<br>
+                <p>Products</p>
+            </div>
+        </div>
+        <div class="portrait-images">
+            <img src="../assets/Previous.svg" class="slide-btn float-btn-left btn-main" onclick="productImage(-1)" />
+            <div class="portrait-images-box">
+                <img class="images first-image" src="assets/portrait-img-01.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-02.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-03.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-04.png" alt="Image">
+                <img class="images" src="../assets/portrait-img-05.png" alt="Image">
+                <div class="btn-mobile" style="display: none;">
+                    <img src="../assets/Previous.svg" class="slide-btn float-btn-left" onclick="productImage(-1)" />
+                    <img src="../assets/Next.svg" class="slide-btn float-btn-right" onclick="productImage(1)" />
+                </div>
+            </div>
+            <img src="../assets/Next.svg" class="slide-btn float-btn-right btn-main" onclick="productImage(1)" />
+        </div>
+    </div>
+
+<footer>
+    <div id="footer-title">BHAWANI DECORATORS</div>
+    <div id="footer-links">
+        <div id="contact">
+            <div id="location">
+                <img class="contact-icon" src="assets/location.svg" alt="Location Icon" />
+                <div class="contact-details">
+                    <div class="detail-title">Address</div>
+                    <div class="detail-subtitle">29 - B, RABINDRA SARANI, 3RD FLOOR, SUITE 11(W) KOLKATA - 700 073,
+                        WEST
+                        BENGAL, INDIA</div>
+                </div>
+            </div>
+            <div id="call-us">
+                <img class="contact-icon" src="assets/phone.svg" alt="Location Icon" />
+                <div class="contact-details">
+                    <div class="detail-title">Call Us</div>
+                    <div class="detail-subtitle">+91-70001 62913</div>
+                </div>
+            </div>
+            <div id="email-us">
+                <img class="contact-icon" src="assets/email.svg" alt="Location Icon" />
+                <div class="contact-details">
+                    <div class="detail-title">Email Us</div>
+                    <div class="detail-subtitle">sara.sanders@gmail.com</div>
+                </div>
+            </div>
+        </div>
+        <div id="social-links">
+            <div id="social-links-title">Social Links</div>
+            <div id="whatsapp">
+                <img class="social-icon" src="assets/whatsapp.svg">
+                <a class="social-link-name" href="#">WhatsApp</a>
+            </div>
+            <div id="instagram">
+                <img class="social-icon" src="assets/instagram.svg">
+                <a class="social-link-name" href="#">Instagram</a>
+            </div>
+            <div id="facebook">
+                <img class="social-icon" src="assets/facebook.svg">
+                <a class="social-link-name" href="#">Facebook</a>
+            </div>
+        </div>
+        <div id="quick-links">
+            <a id="quick-links-title">Quick Links</a>
+            <a class="quick-link-name" href="">Home</a>
+            <a class="quick-link-name" href="">Contact Us</a>
+            <a class="quick-link-name" href="">Our Products</a>
+            <a class="quick-link-name" href="">About Us</a>
+            <a class="quick-link-name" href="">Our Services</a>
+        </div>
+    </div>
+    <div id="copyright-claims">Copyright @2022 Bhawani Decorators, All Right Reserved. Design and Developed by
+        CreativeDroplets With GraphityFactory.</div>
+</footer>
+    <script src="../JavaScript/gallery.js"></script>
+    <script src="../JavaScript/main.js"></script>
+
+</body>
+
+</html>
