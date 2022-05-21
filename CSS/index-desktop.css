@@ -28,7 +28,8 @@ header {
 }
 
 #first-body {
-    max-height: 1080px;
+    height: 100vh;
+    min-height: 1080px;
     background-image: url('../assets/index-background-desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
