@@ -19,7 +19,7 @@ html {
     font-size: 16px;
 }
 
-body{
+body {
     background-color: white !important;
 }
 
@@ -28,7 +28,6 @@ header {
 }
 
 #first-body {
-    height: 100vh;
     max-height: 1080px;
     background-image: url('../assets/index-background-desktop.png');
     background-size: cover;
@@ -48,12 +47,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-/* 
-@media only screen and (max-width:560px) {
-    #content-body {
-        margin-top: 100px;
-    }
-} */
+
+@media only screen and (max-width:560px) {}
 
 #left-side {
     height: 100%;
@@ -200,6 +195,7 @@ header {
         margin-top: 120px;
         margin-inline-start: auto;
         margin-inline-end: auto;
+        margin-bottom: 50px;
     }
 }
 
