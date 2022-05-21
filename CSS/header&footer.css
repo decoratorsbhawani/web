@@ -1,3 +1,8 @@
+body {
+    /* this is for mobile devices specially */
+    overflow-x: hidden;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* Header Starts Here */
@@ -144,7 +149,6 @@ a:visited,
 
 #hero-section {
     height: 32.407vh;
-    /* background-image: url(/assets/services-page-image.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -197,6 +201,12 @@ a:visited,
 @media only screen and (max-width: 760px) {
     #services-subtitle {
         font-size: 1em;
+    }
+}
+
+@media only screen and (max-height: 740px) {
+    #services-subtitle {
+        display: none;
     }
 }
 

@@ -30,7 +30,7 @@ header {
 #first-body {
     height: 100vh;
     min-height: 1080px;
-    background-image: url('../assets/index-background-desktop.png');
+    background-image: url('../assets/index-background-desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
@@ -294,6 +294,9 @@ header {
 }
 
 #right-side #img-container img:nth-child(3) {
+    object-fit: scale-down;
+    max-height: fit-content;
+    max-width: fit-content;
     position: absolute;
     z-index: 5;
     bottom: 0px;
