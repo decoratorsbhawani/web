@@ -14,8 +14,9 @@ const trigger = document.querySelector(".contact-us-btn");
 const close_button = document.querySelector(".close-button");
 
 function toggleModel() {
-    if (window.clientWidth < 1260) return;
-    document.getElementsByClassName("model-background")[0].classList.toggle("hide-model");
+    if (!(window.innerWidth < 1260)) {
+        document.getElementsByClassName("model-background")[0].classList.toggle("hide-model");
+    }
 }
 
 trigger.addEventListener("click", toggleModel);
