@@ -39,8 +39,8 @@ header {
 }
 
 #content-body {
-    min-height: 1080px;
-    height: max-content;
+    /* min-height: 1080px;
+    height: max-content; */
     padding-inline-start: 5.208vw;
     padding-inline-end: 5.208vw;
     margin-top: auto;

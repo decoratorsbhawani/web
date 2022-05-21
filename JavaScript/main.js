@@ -14,6 +14,9 @@ const trigger = document.querySelector(".contact-us-btn");
 const close_button = document.querySelector(".close-button");
 
 function toggleModel() {
+    if (window.clientWidth) {
+        
+    }
     document.getElementsByClassName("model-background")[0].classList.toggle("hide-model");
 }
 
