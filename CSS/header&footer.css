@@ -82,7 +82,8 @@ header {
     color: white;
 }
 
-a:visited {
+a:visited,
+.nav-links:visited {
     color: white;
 }
 
