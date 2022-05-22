@@ -127,7 +127,8 @@ a:visited,
     #burger-menu {
         display: initial;
         justify-self: end;
-        height: clamp(20px, 5vw, 25px);
+        /* height: clamp(20px, 5vw, 25px); */
+        height: 25px;
         /* margin-inline-end: 20px; */
     }
 }
@@ -686,10 +687,12 @@ textarea {
 .mobile-nav-background {
     width: 100vw;
     height: 100vh;
+    margin-top: -90px;
     position: fixed;
     left: 100%;
     background-color: var(--accent-color);
     transition: all .35s ease-out;
+    z-index: 20;
 }
 
 .show-mobile-nav {

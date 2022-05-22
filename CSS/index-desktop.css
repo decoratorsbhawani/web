@@ -25,7 +25,8 @@ body {
 
 header {
     background-color: transparent !important;
-    position: unset !important;
+    position: relative !important;
+    z-index: 0 !important;
 }
 
 .hide-header {
