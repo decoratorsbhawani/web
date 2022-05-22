@@ -19,5 +19,8 @@ function toggleModel() {
     }
 }
 
+function sendMail() {
+}
+
 trigger.addEventListener("click", toggleModel);
 close_button.addEventListener("click", toggleModel);

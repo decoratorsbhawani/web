@@ -400,6 +400,7 @@ footer {
     color: #fff;
     letter-spacing: 0.040em;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* media query for social-links-title */
