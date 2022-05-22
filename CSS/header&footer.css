@@ -1,7 +1,19 @@
-html,
-body {
-    overflow-x: hidden;
+/* overflow fix for mobile */
+
+@media only screen and (max-width:760px) {
+    html,
+    body {
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+        display: none;
+    }
 }
+
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* Header Starts Here */
@@ -49,6 +61,8 @@ header,
 }
 
 #header-logo {
+    /* width: 146px;
+    height: 100px; */
     justify-self: start;
     margin-left: 6.250vw;
     align-self: center;
