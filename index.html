@@ -14,14 +14,15 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' />
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
-    <link rel="shortcut icon" href="asserts/Logo.png" />
+    <link rel="shortcut icon" href="assets/Logo.png" />
 </head>
 
 
 <body>
+    <!-- Model Box Starts Here -->
 
     <div class="model-background hide-model">
-        <div class="modelBox">
+        <div class="modelBox animate-box">
             <img class="close-button" src="assets/svg/close-model.svg" />
             <div class="model-contents">
                 <div class="mail-form">
@@ -78,6 +79,24 @@
             </div>
         </div>
     </div>
+
+    <!-- Model Box Ends Here -->
+
+    <!-- Mobile Navigation Starts Here -->
+
+    <div class="mobile-nav-background">
+        <div class="mobile-nav">
+            <img class="close-mobile-nav" onclick="toggleMobileNav()" src="assets/svg/close-model-white.svg" />
+            <div class="mobile-nav-items" onclick="toggleMobileNav()">Home</div>
+            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/product&service.html')">Services</div>
+            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/product&service.html#our-products')">Products</div>
+            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/galleryhtml')">Gallery</div>
+            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/about.html')">About Us</div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Ends Here -->
+
     <!--Main Landing Page Starts-->
     <div id="first-body">
         <header>
@@ -87,7 +106,7 @@
                 <a class="nav-links" href="pages/product&service.html">Services</a>&nbsp;&nbsp;
                 <a class="nav-links" href="pages/gallery.html">Gallery</a>&nbsp;&nbsp;
                 <a class="nav-links" href="pages/about.html">About Us</a>&nbsp;&nbsp;
-                <img id="burger-menu" src="assets/svg/burget-menu.svg" alt="Burger Menu Icon">
+                <img id="burger-menu" onclick="toggleMobileNav()" src="assets/svg/burget-menu.svg" alt="Burger Menu Icon">
             </div>
         </header>
         <div id="content-body">
