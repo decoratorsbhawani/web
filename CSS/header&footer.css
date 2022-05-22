@@ -725,3 +725,13 @@ textarea {
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (max-height:760px) {
+    .mobile-nav {
+        row-gap: 20px;
+    }
+
+    .mobile-nav-items {
+        height: 50px;
+    }
+}
