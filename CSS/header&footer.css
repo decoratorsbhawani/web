@@ -7,12 +7,17 @@ body {
 
 /* Header Starts Here */
 
-header {
+header,
+#header {
     height: 110px;
+    width: 100%;
     background-color: var(--accent-color);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* position: sticky; */
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    transition: top 350ms ease-out;
 }
 
 /* media query for header height */
@@ -151,6 +156,7 @@ a:visited,
 
 #hero-section {
     height: 32.407vh;
+    margin-top: 110px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;

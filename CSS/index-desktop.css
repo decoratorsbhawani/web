@@ -25,6 +25,19 @@ body {
 
 header {
     background-color: transparent !important;
+    position: unset !important;
+}
+
+.hide-header {
+    position: fixed;
+    top: -110px !important;
+    transition: all 350ms ease-out;
+}
+
+.show-header {
+    position: fixed;
+    top: 0px !important;
+    transition: top 350ms ease-out;
 }
 
 #first-body {
@@ -658,4 +671,3 @@ header {
         /* background-position: ; */
     }
 }
-

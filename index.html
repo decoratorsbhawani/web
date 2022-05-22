@@ -89,7 +89,8 @@
             <img class="close-mobile-nav" onclick="toggleMobileNav()" src="assets/svg/close-model-white.svg" />
             <div class="mobile-nav-items" onclick="toggleMobileNav()">Home</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('pages/product&service.html')">Services</div>
-            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/product&service.html#our-products')">Products</div>
+            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/product&service.html#our-products')">
+                Products</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('pages/gallery.html')">Gallery</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('pages/about.html')">About Us</div>
         </div>
@@ -99,14 +100,26 @@
 
     <!--Main Landing Page Starts-->
     <div id="first-body">
-        <header>
-            <img id="header-logo" src="assets/Logo.png" alt="Bhawani Decorators Logo">
+        <div id="header" class="hide-header"> 
+            <img id="header-logo" src="assets/svg/Logo.svg" alt="Bhawani Decorators Logo">
             <img id="header-title" style="cursor: unset;" src="assets/svg/Title.svg" alt="Title of Page">
             <div id="header-nav">
                 <a class="nav-links" href="pages/product&service.html">Services</a>&nbsp;&nbsp;
                 <a class="nav-links" href="pages/gallery.html">Gallery</a>&nbsp;&nbsp;
                 <a class="nav-links" href="pages/about.html">About Us</a>&nbsp;&nbsp;
-                <img id="burger-menu" onclick="toggleMobileNav()" src="assets/svg/burget-menu.svg" alt="Burger Menu Icon">
+                <img id="burger-menu" onclick="toggleMobileNav()" src="assets/svg/burget-menu.svg"
+                    alt="Burger Menu Icon">
+            </div>
+        </div>
+        <header> 
+            <img id="header-logo" src="assets/svg/Logo.svg" alt="Bhawani Decorators Logo">
+            <img id="header-title" style="cursor: unset;" src="assets/svg/Title.svg" alt="Title of Page">
+            <div id="header-nav">
+                <a class="nav-links" href="pages/product&service.html">Services</a>&nbsp;&nbsp;
+                <a class="nav-links" href="pages/gallery.html">Gallery</a>&nbsp;&nbsp;
+                <a class="nav-links" href="pages/about.html">About Us</a>&nbsp;&nbsp;
+                <img id="burger-menu" onclick="toggleMobileNav()" src="assets/svg/burget-menu.svg"
+                    alt="Burger Menu Icon">
             </div>
         </header>
         <div id="content-body">

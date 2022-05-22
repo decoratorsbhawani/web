@@ -30,3 +30,16 @@ function animateRedirectTo(n) {
 
 function sendMail() {
 }
+
+
+// for sliding down the nav bar
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
+        document.getElementById("header").classList.add("show-header");
+        console.log('dont know');
+    } else {
+        document.getElementById("header").classList.remove("show-header");
+    }
+} 
