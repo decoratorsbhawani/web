@@ -686,7 +686,6 @@ textarea {
 .mobile-nav-background {
     width: 100vw;
     height: 100vh;
-    margin-top: -90px;
     position: fixed;
     left: 100%;
     background-color: var(--accent-color);

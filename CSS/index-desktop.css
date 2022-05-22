@@ -29,11 +29,6 @@ header {
     z-index: 0 !important;
 }
 
-.mobile-nav-background {
-    margin-top: 0px !important;
-}
-
-
 .hide-header {
     position: fixed;
     top: -110px !important;
