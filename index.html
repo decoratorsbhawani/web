@@ -23,7 +23,7 @@
 
     <div class="model-background hide-model">
         <div class="modelBox animate-box">
-            <img class="close-button" src="assets/svg/close-model.svg" />
+            <img class="close-button" onclick="toggleModel()" src="assets/svg/close-model.svg" />
             <div class="model-contents">
                 <div class="mail-form">
                     <div class="main-heading">Send Us A Message</div>
@@ -90,7 +90,7 @@
             <div class="mobile-nav-items" onclick="toggleMobileNav()">Home</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('pages/product&service.html')">Services</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('pages/product&service.html#our-products')">Products</div>
-            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/galleryhtml')">Gallery</div>
+            <div class="mobile-nav-items" onclick="animateRedirectTo('pages/gallery.html')">Gallery</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('pages/about.html')">About Us</div>
         </div>
     </div>
@@ -121,7 +121,7 @@
                 <div id="container-button">
                     <button type="button" onclick="redirectTo('pages/product&service.html#our-products')">See
                         Products</button>
-                    <button type="button" class="contact-us-btn">Contact Us</button>
+                    <button type="button" onclick="toggleModel()" class="contact-us-btn">Contact Us</button>
                 </div>
             </div>
             <div id="right-side">

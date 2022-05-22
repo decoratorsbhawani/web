@@ -17,15 +17,15 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="shortcut icon" href="../assets/Logo.png" />
 
 </head>
 
 <body>
     <!-- Model Box Starts Here -->
-    
     <div class="model-background hide-model">
         <div class="modelBox">
-            <img class="close-button" src="assets/svg/close-model.svg" />
+            <img class="close-button" onclick="toggleModel()" src="../assets/svg/close-model.svg" />
             <div class="model-contents">
                 <div class="mail-form">
                     <div class="main-heading">Send Us A Message</div>
@@ -47,7 +47,7 @@
                 <div id="contact-info">
                     <div class="main-heading">Contact Information</div>
                     <div id="location">
-                        <img class="contact-icon" src="assets/svg/location-black.svg" alt="Location Icon" />
+                        <img class="contact-icon" src="../assets/svg/location-black.svg" alt="Location Icon" />
                         <div class="contact-details">
                             <div class="detail-title model-style">Address</div>
                             <div class="detail-subtitle model-style">29 - B, RABINDRA SARANI, 3RD FLOOR, SUITE
@@ -59,41 +59,41 @@
                         </div>
                     </div>
                     <div id="call-us">
-                        <img class="contact-icon" src="assets/svg/phone-black.svg" alt="Location Icon" />
+                        <img class="contact-icon" src="../assets/svg/phone-black.svg" alt="Location Icon" />
                         <div class="contact-details">
                             <div class="detail-title model-style">Call Us</div>
                             <div class="detail-subtitle model-style">+91-70001 62913</div>
                         </div>
                     </div>
                     <div id="email-us">
-                        <img class="contact-icon" src="assets/svg/email-black.svg" alt="Location Icon" />
+                        <img class="contact-icon" src="../assets/svg/email-black.svg" alt="Location Icon" />
                         <div class="contact-details">
                             <div class="detail-title model-style">Email Us</div>
                             <div class="detail-subtitle model-style">sara.sanders@gmail.com</div>
                         </div>
                     </div>
                     <div class="model-social-links">
-                        <img class="model-social-icon" src="assets/svg/whatsapp-model-icon.svg" alt="Whatsapp Icon" />
-                        <img class="model-social-icon" src="assets/svg/insta-model-icon.svg" alt="Instagram Icon" />
-                        <img class="model-social-icon" src="assets/svg/facebook-model-icon.svg" alt="Facebook Icon" />
+                        <img class="model-social-icon" src="../assets/svg/whatsapp-model-icon.svg" alt="Whatsapp Icon" />
+                        <img class="model-social-icon" src="../assets/svg/insta-model-icon.svg" alt="Instagram Icon" />
+                        <img class="model-social-icon" src="../assets/svg/facebook-model-icon.svg" alt="Facebook Icon" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box Ends Here -->
 
     <!-- Mobile Navigation Starts Here -->
     
     <div class="mobile-nav-background">
         <div class="mobile-nav">
-            <img class="close-mobile-nav" onclick="toggleMobileNav()" src="assets/svg/close-model-white.svg" />
+            <img class="close-mobile-nav" onclick="toggleMobileNav()" src="../assets/svg/close-model-white.svg" />
             <div class="mobile-nav-items" onclick="animateRedirectTo('/')">Home</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('product&service.html')">Services</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('product&service.html#our-products')">Products
             </div>
-            <div class="mobile-nav-items" onclick="animateRedirectTo('galleryhtml')">Gallery</div>
+            <div class="mobile-nav-items" onclick="animateRedirectTo('gallery.html')">Gallery</div>
             <div class="mobile-nav-items" onclick="animateRedirectTo('about.html')">About Us</div>
         </div>
     </div>
@@ -195,62 +195,62 @@
     </div>
 
     <!--Footer Starts-->
-    <footer>
-        <div id="footer-title">BHAWANI DECORATORS</div>
-        <div id="footer-links">
-            <div id="contact">
-                <div id="location">
-                    <img class="contact-icon" src="assets/svg/location.svg" alt="Location Icon" />
-                    <div class="contact-details">
-                        <div class="detail-title">Address</div>
-                        <div class="detail-subtitle">29 - B, RABINDRA SARANI, 3RD FLOOR, SUITE 11(W) KOLKATA - 700 073,
-                            WEST
-                            BENGAL, INDIA</div>
-                    </div>
-                </div>
-                <div id="call-us">
-                    <img class="contact-icon" src="assets/svg/phone.svg" alt="Location Icon" />
-                    <div class="contact-details">
-                        <div class="detail-title">Call Us</div>
-                        <div class="detail-subtitle">+91-70001 62913</div>
-                    </div>
-                </div>
-                <div id="email-us">
-                    <img class="contact-icon" src="assets/svg/email.svg" alt="Location Icon" />
-                    <div class="contact-details">
-                        <div class="detail-title">Email Us</div>
-                        <div class="detail-subtitle">sara.sanders@gmail.com</div>
-                    </div>
+<footer>
+    <div id="footer-title">BHAWANI DECORATORS</div>
+    <div id="footer-links">
+        <div id="contact">
+            <div id="location">
+                <img class="contact-icon" src="../assets/svg/location.svg" alt="Location Icon" />
+                <div class="contact-details">
+                    <div class="detail-title">Address</div>
+                    <div class="detail-subtitle">29 - B, RABINDRA SARANI, 3RD FLOOR, SUITE 11(W) KOLKATA - 700 073,
+                        WEST
+                        BENGAL, INDIA</div>
                 </div>
             </div>
-            <div id="social-links">
-                <div id="social-links-title">Social Links</div>
-                <div id="whatsapp">
-                    <img class="social-icon" src="assets/svg/whatsapp.svg">
-                    <a class="social-link-name" href="#">WhatsApp</a>
-                </div>
-                <div id="instagram">
-                    <img class="social-icon" src="assets/svg/instagram.svg">
-                    <a class="social-link-name" href="https://www.instagram.com/bhawanidecorators/">Instagram</a>
-                </div>
-                <div id="facebook">
-                    <img class="social-icon" src="assets/svg/facebook.svg">
-                    <a class="social-link-name" href="#">Facebook</a>
+            <div id="call-us">
+                <img class="contact-icon" src="../assets/svg/phone.svg" alt="Location Icon" />
+                <div class="contact-details">
+                    <div class="detail-title">Call Us</div>
+                    <div class="detail-subtitle">+91-70001 62913</div>
                 </div>
             </div>
-            <div id="quick-links">
-                <a id="quick-links-title">Quick Links</a>
-                <a class="quick-link-name" onclick="redirectHome()">Home</a>
-                <a class="quick-link-name" onclick="toggleModel()">Contact Us</a>
-                <a class="quick-link-name" onclick="redirectTo('pages/product&service.html#our-products')">Our
-                    Products</a>
-                <a class="quick-link-name" onclick="redirectTo('pages/about.html')">About Us</a>
-                <a class="quick-link-name" onclick="redirectTo('pages/product&service.html')">Our Services</a>
+            <div id="email-us">
+                <img class="contact-icon" src="../assets/svg/email.svg" alt="Location Icon" />
+                <div class="contact-details">
+                    <div class="detail-title">Email Us</div>
+                    <div class="detail-subtitle">sara.sanders@gmail.com</div>
+                </div>
             </div>
         </div>
-        <div id="copyright-claims">Copyright @2022 Bhawani Decorators, All Right Reserved. Design and Developed by
-            CreativeDroplets With GraphityFactory.</div>
-    </footer>
+        <div id="social-links">
+            <div id="social-links-title">Social Links</div>
+            <div id="whatsapp">
+                <img class="social-icon" src="../assets/svg/whatsapp.svg">
+                <a class="social-link-name" href="#">WhatsApp</a>
+            </div>
+            <div id="instagram">
+                <img class="social-icon" src="../assets/svg/instagram.svg">
+                <a class="social-link-name" href="https://www.instagram.com/bhawanidecorators/">Instagram</a>
+            </div>
+            <div id="facebook">
+                <img class="social-icon" src="../assets/svg/facebook.svg">
+                <a class="social-link-name" href="#">Facebook</a>
+            </div>
+        </div>
+        <div id="quick-links">
+            <a id="quick-links-title">Quick Links</a>
+            <a class="quick-link-name" onclick="redirectHome()">Home</a>
+            <a class="quick-link-name" onclick="toggleModel()">Contact Us</a>
+            <a class="quick-link-name" onclick="redirectTo('product&service.html#our-products')">Our
+                Products</a>
+            <a class="quick-link-name" onclick="redirectTo('about.html')">About Us</a>
+            <a class="quick-link-name" onclick="redirectTo('product&service.html')">Our Services</a>
+        </div>
+    </div>
+    <div id="copyright-claims">Copyright @2022 Bhawani Decorators, All Right Reserved. Design and Developed by
+        CreativeDroplets With GraphityFactory.</div>
+</footer>
     <!--Footer Ends-->
     <script src="../JavaScript/gallery.js"></script>
     <script src="../JavaScript/main.js"></script>

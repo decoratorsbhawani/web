@@ -12,6 +12,7 @@ header {
     background-color: var(--accent-color);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* position: sticky; */
 }
 
 /* media query for header height */
