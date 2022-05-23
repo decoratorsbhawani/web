@@ -1,6 +1,25 @@
+/* variables define here */
+
+:root {
+    --accent-color: #063247;
+    --light-grey: #404040;
+    --dark-grey: #16161d;
+}
+
+/*  */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* overflow fix for mobile */
 
 @media only screen and (max-width:760px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -668,6 +687,7 @@ textarea {
 }
 
 
+
 @media only screen and (max-width:1520px) {
     .model-contents {
         margin-left: 50px;
@@ -688,6 +708,71 @@ textarea {
 
     .send-mail-btn {
         width: 150px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:1260px) {
+    .model-contents {
+        display: flex;
+        column-gap: clamp(5px, 100vw, 50px);
+        width: max-content;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-inline-start: 50px;
+        padding-inline-end: 50px;
+        margin-block-start: 100px;
+        margin-block-end: 100px;
+    }
+
+    .mail-form {
+        width: max-content;
+    }
+
+    .mail-form input,
+    textarea {
+        width: clamp(200px, 50vw, 400px);
+    }
+
+    #contact-info {
+        width: 0px;
+        margin-left: 0px;
+    }
+
+    .model-social-links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .model-social-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .model-contents {
+        column-gap: 30px;
+    }
+
+    .mail-form .main-heading {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:460px) {
+    .model-social-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .model-contents {
+        column-gap: 25px;
     }
 }
 

@@ -457,7 +457,8 @@ header {
     background-color: #fff;
     background-image: url(/assets/temp-img.png);
     background-repeat: no-repeat;
-    background-position: 0% -30px;
+    background-position: 0% 50%;
+    background-size: contain;
     transition: all .535s ease-out;
 }
 

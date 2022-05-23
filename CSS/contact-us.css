@@ -1,0 +1,73 @@
+#hero-section {
+    background-image: url(/assets/contact-us-page-image.png);
+    background-position: left;
+}
+
+@media only screen and (max-width:660px) {
+    #hero-section {
+        background-image: url(/assets/contact-us-page-image-small-screen.png);
+        background-position: center;
+    }
+
+}
+
+.model-contents {
+    display: flex;
+    column-gap: clamp(5px, 100vw, 50px);
+    width: max-content;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+    margin-block-start: 100px;
+    margin-block-end: 100px;
+}
+
+.mail-form {
+    width: max-content;
+}
+
+.mail-form input,
+textarea {
+    width: clamp(200px, 50vw, 400px);
+}
+
+#contact-info {
+    width: 0px;
+    margin-left: 0px;
+}
+
+.model-social-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.model-social-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width:560px) {
+    .model-contents {
+        column-gap: 30px;
+    }
+
+    .mail-form .main-heading {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:460px) {
+    .model-social-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .model-contents {
+        column-gap: 25px;
+    }
+}

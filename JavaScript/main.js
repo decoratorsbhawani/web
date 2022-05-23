@@ -15,6 +15,8 @@ function toggleModel() {
     if (!(window.innerWidth < 1260)) {
         document.getElementsByClassName("model-background")[0].classList.toggle("hide-model");
         document.getElementsByClassName("modelBox")[0].classList.toggle("animate-box");
+    } else {
+        redirectTo('../pages/contact-us.html');
     }
 
 }
@@ -36,10 +38,16 @@ function sendMail() {
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
-        document.getElementById("header").classList.add("show-header");
-        console.log('dont know');
-    } else {
-        document.getElementById("header").classList.remove("show-header");
+    try {
+
+
+        if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
+            document.getElementById("header").classList.add("show-header");
+            console.log('dont know');
+        } else {
+            document.getElementById("header").classList.remove("show-header");
+        }
+    } catch (error) {
+        //  console.log("Error Occured: "+error)   
     }
 } 
