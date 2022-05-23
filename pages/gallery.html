@@ -27,22 +27,22 @@
         <div class="modelBox animate-box">
             <img class="close-button" onclick="toggleModel()" src="../assets/svg/close-model.svg" />
             <div class="model-contents">
-                <div class="mail-form">
+                <form class="mail-form" action="https://formspree.io/f/mbjwwlgz" method="post">
                     <div class="main-heading">Send Us A Message</div>
                     <div class="text-box">
                         <label for="name">Your Name</label><br>
-                        <input type="text" name="user-name" id="user-name">
+                        <input type="text" name="name" id="user-name">
                     </div>
                     <div class="text-box">
                         <label for="mail">Mail</label><br>
-                        <input type="text" name="user-main" id="user-main">
+                        <input type="email" name="email" id="user-main">
                     </div>
                     <div class="text-box">
                         <label for="message">Message</label><br>
-                        <textarea name="user-message" id="user-message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="user-message" cols="30" rows="10"></textarea>
                     </div>
-                    <button class="send-mail-btn" type="button">Send</button>
-                </div>
+                    <button class="send-mail-btn" type="submit">Send</button>
+                </form>
                 <span class="divider"></span>
                 <div id="contact-info">
                     <div class="main-heading">Contact Information</div>
