@@ -388,7 +388,7 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 3em;
-    letter-spacing: 0.080em;
+    /* letter-spacing: 0.040em; */
     text-align: center;
     color: var(--light-grey);
 }
