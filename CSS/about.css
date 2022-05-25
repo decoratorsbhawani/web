@@ -43,7 +43,7 @@ html {
     margin-inline-start: clamp(60px, 10vw, 350px);
     margin-inline-end: clamp(100px, 10vw, 350px);
     margin-bottom: 200px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     text-align: inherit;
@@ -82,7 +82,7 @@ html {
 
 #who-we-are #heading {
     margin-bottom: 150px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Philosopher', serif;
     font-size: 3.5em;
     font-weight: 600;
     text-align: center;
@@ -131,7 +131,7 @@ html {
 }
 
 #who-we-are #body #details #desc {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     line-height: 150%;
@@ -164,7 +164,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: var(--accent-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     line-height: 150%;
@@ -251,7 +251,7 @@ html {
 
 #why-us #heading {
     margin-bottom: 150px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Philosopher', serif;
     font-size: 3.5em;
     font-weight: 600;
     text-align: center;
@@ -281,7 +281,7 @@ html {
 }
 
 #why-us #body #list .list-items {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     letter-spacing: 0.040em;

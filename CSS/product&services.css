@@ -136,7 +136,7 @@ html {
 
 
 .service-card-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 2em;
     font-weight: 400;
     color: var(--dark-grey);
@@ -211,14 +211,14 @@ html {
 }
 
 #product-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 1.5em;
     font-weight: 500;
     color: white;
 }
 
 #product-subtitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
     font-size: 1em;
     color: white;
@@ -285,7 +285,7 @@ html {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
     padding-block-start: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 1em;
     font-weight: 400;
     color: #000;
@@ -294,7 +294,7 @@ html {
 }
 
 .product-desc {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
     font-size: .8em;
     padding-block-start: 8px;
