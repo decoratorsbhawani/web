@@ -219,7 +219,7 @@ html {
 #title::before {
     content: "";
     display: block;
-    width: 20px;
+    width: 15px;
     height: 100px;
     margin-right: 10px;
     background-color: var(--accent-color);
