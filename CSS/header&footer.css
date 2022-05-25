@@ -672,6 +672,10 @@ textarea {
     margin-bottom: 25px;
 }
 
+#contact-info > #location,#call-us,#email-us{
+    cursor: pointer;
+}
+
 #contact-info .model-social-links {
     margin-bottom: 0px;
     margin-top: 60px;
