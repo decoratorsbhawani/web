@@ -11,6 +11,10 @@ function redirectTo(n) {
     document.location.href = n;
 }
 
+function blankRedirect(n) {
+    window.open(n, '_blank');
+}
+
 function toggleModel() {
     if (!(window.innerWidth < 1260)) {
         document.getElementsByClassName("model-background")[0].classList.toggle("hide-model");

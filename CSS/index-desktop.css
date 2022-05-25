@@ -344,7 +344,7 @@ header {
     font-weight: 600;
     font-size: 32px;
     line-height: 111.8%;
-    /* identical to box height, or 36px */
+    letter-spacing: 0.040em;
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -388,7 +388,7 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 3em;
-    letter-spacing: 0.040em;
+    letter-spacing: 0.080em;
     text-align: center;
     color: var(--light-grey);
 }

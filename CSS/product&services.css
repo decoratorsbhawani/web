@@ -68,9 +68,24 @@ html {
         background-image: url(/assets/temp-img.png);
         background-repeat: no-repeat;
         background-position: 50% 0%;
-        background-size: 101%;
         transition: all .535s ease-out;
     }
+}
+
+.service-cards:nth-child(n) {
+    background-size: contain;
+}
+
+.service-cards:nth-child(1) {
+    background-image: url(../assets/service-images/pop.jpg);
+}
+
+.service-cards:nth-child(2) {
+    background-image: url(../assets/service-images/gypsum-board.jpg);
+}
+
+.service-cards:nth-child(5) {
+    background-image: url(../assets/service-images/t-section.jpg);
 }
 
 .service-cards:first-child {
@@ -225,7 +240,27 @@ html {
     display: flex;
     justify-content: stretch;
     align-items: end;
+    background-size: cover;
     /* cursor: pointer; */
+}
+
+.product-cards:nth-child(1) {
+    background-image: url(/assets/product-images/product-image-05.jpg);
+}
+.product-cards:nth-child(2) {
+    background-image: url(/assets/product-images/product-image-10.jpg);
+}
+.product-cards:nth-child(3) {
+    background-image: url(/assets/product-images/product-image-06.jpg);
+}
+.product-cards:nth-child(4) {
+    background-image: url(/assets/product-images/product-image-08.jpg);
+}
+.product-cards:nth-child(5) {
+    background-image: url(/assets/product-images/product-image-04.jpg);
+}
+.product-cards:nth-child(6) {
+    background-image: url(/assets/product-images/product-image-01.jpg);
 }
 
 /* media query for product cards */
@@ -245,7 +280,7 @@ html {
 
 .product-cards-name {
     height: 70px;
-    width: inherit;
+    width: 100%;
     background-color: #fff;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
@@ -304,7 +339,7 @@ html {
 
     .product-cards:active>.product-cards-name>.product-desc {
         transition: all .350s ease-out;
-    transition-delay: .350s;
+        transition-delay: .350s;
         color: #000;
     }
 

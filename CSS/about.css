@@ -171,6 +171,7 @@ html {
     letter-spacing: 0.040em;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 /* media query for who-we-are contact-us-btn */
