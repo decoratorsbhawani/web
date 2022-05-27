@@ -373,7 +373,7 @@ header {
     min-height: 1080px;
     height: max-content;
     padding-block-end: 100px;
-    background-image: url(../assets/services-page-patterns.png);
+    background-image: url(../assets/patterns.svg);
     background-repeat: no-repeat repeat-x;
 }
 
