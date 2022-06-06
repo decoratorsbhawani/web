@@ -31,7 +31,8 @@ html {
     padding-block-end: 100px;
     display: block;
     background-image: url(/assets/patterns.svg);
-    background-repeat: repeat-y;
+    background-repeat: repeat;
+    background-size: 50%;
     /* background-position: center; */
 }
 
@@ -54,6 +55,9 @@ html {
 
 /* media query for services card */
 @media only screen and (max-width: 760px) {
+    #services{
+    background-size: 100%;
+    }
     .service-cards {
         margin-block-start: 100px;
         min-height: unset;
@@ -75,13 +79,13 @@ html {
 .service-cards:nth-child(n) {
     background-size: contain;
 }
-
+/* 
 .service-cards:nth-child(1) {
     background-image: url(../assets/service-images/pop.jpg);
-}
+} */
 
-.service-cards:nth-child(2) {
-    background-image: url(../assets/service-images/gypsum-board.jpg);
+.service-cards:nth-child(1) {
+    background-image: url(../assets/service-images/gypsum-board_redused.jpg);
 }
 
 .service-cards:nth-child(5) {
@@ -234,7 +238,7 @@ html {
     background-color: #fff;
     background-image: url(/assets/temp-product-img.png);
     background-repeat: no-repeat;
-    background-position: 0% 50%;
+    background-position: top;
     box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, .35);
     transition: all .350s ease-out;
     display: flex;
@@ -245,22 +249,51 @@ html {
 }
 
 .product-cards:nth-child(1) {
-    background-image: url(/assets/product-images/product-image-05.jpg);
+    background-image: url(/assets/product-images/bit-corner.jpg);
+    background-position: 0% 50%;
 }
 .product-cards:nth-child(2) {
-    background-image: url(/assets/product-images/product-image-10.jpg);
+    background-image: url(/assets/product-images/Cornish.jpg);
 }
 .product-cards:nth-child(3) {
-    background-image: url(/assets/product-images/product-image-06.jpg);
+    background-image: url(/assets/product-images/imported-cornish.jpg);
 }
 .product-cards:nth-child(4) {
-    background-image: url(/assets/product-images/product-image-08.jpg);
+    background-image: url(/assets/product-images/bracket.jpg);
 }
 .product-cards:nth-child(5) {
-    background-image: url(/assets/product-images/product-image-04.jpg);
+    background-image: url(/assets/product-images/central-panel.jpg);
+    /* background-position: 0% -50%; */
 }
 .product-cards:nth-child(6) {
-    background-image: url(/assets/product-images/product-image-01.jpg);
+    background-image: url(/assets/product-images/star-screw.jpg);
+}
+.product-cards:nth-child(7) {
+    background-image: url(/assets/product-images/corner-corlesh.jpg);
+}
+.product-cards:nth-child(8) {
+    background-image: url(/assets/product-images/imported-dom.jpg);
+}
+.product-cards:nth-child(9) {
+    background-image: url(/assets/product-images/pillers.jpg);
+}
+.product-cards:nth-child(10) {
+    background-image: url(/assets/product-images/bit.png);
+}
+.product-cards:nth-child(11) {
+    background-image: url(/assets/product-images/gripper.jpg);
+}
+.product-cards:nth-child(12) {
+    background-image: url(/assets/product-images/joint-fiber-glass-tape.jpg);
+}
+.product-cards:nth-child(13) {
+    background-image: url(/assets/product-images/pvc-sheets.jpg);
+}
+.product-cards:nth-child(14) {
+    background-image: url(/assets/product-images/t-section.jpg);
+}
+.product-cards:nth-child(15) {
+    background-image: url(/assets/product-images/pop-sheets.jpg);
 }
 
 /* media query for product cards */
@@ -303,34 +336,33 @@ html {
 }
 
 
-
 .product-cards:active {
     box-shadow: none;
     /* cursor: pointer; */
     transition: all .350s ease-out;
 }
 
-.product-cards:hover>.product-cards-name {
+/* .product-cards:hover>.product-cards-name {
     height: 150px;
     transition: all .350s ease-out;
-}
+} */
 
-.product-cards:hover>.product-cards-name>.product-desc {
+/* .product-cards:hover>.product-cards-name>.product-desc {
     color: #000;
     transition: all .250s ease-out;
     transition-delay: .350s;
-}
+} */
 
 @media only screen and (max-width: 560px) {
-    .product-cards:hover>.product-cards-name {
+    /* .product-cards:hover>.product-cards-name {
         height: 70px;
         transition: unset;
-    }
+    } */
 
-    .product-cards:hover>.product-cards-name>.product-desc {
+    /* .product-cards:hover>.product-cards-name>.product-desc {
         color: transparent;
         transition: unset;
-    }
+    } */
 
     .product-cards:active>.product-cards-name {
         height: 200px;
