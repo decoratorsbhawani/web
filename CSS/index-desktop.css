@@ -463,16 +463,19 @@ header {
 }
 
 .service-cards:nth-child(1) {
-background-image: url(/assets/thermocol.jpg);
+    background-image: url(/assets/thermocol.jpg);
 }
+
 .service-cards:nth-child(2) {
-background-image: url(/assets/pvc.jpg);
+    background-image: url(/assets/pvc.jpg);
 }
+
 .service-cards:nth-child(3) {
-background-image: url(/assets/wood.jpg);
+    background-image: url(/assets/wood.jpg);
 }
+
 .service-cards:nth-child(4) {
-background-image: url(/assets/gypsum-board.jpg);
+    background-image: url(/assets/gypsum-board.jpg);
 }
 
 /* media query for services card */
@@ -551,6 +554,13 @@ background-image: url(/assets/gypsum-board.jpg);
     transition: all .350s ease-out;
 }
 
+@media (hover: none) {
+    .service-cards {
+        border: 1px solid white;
+        box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, .3);
+        transition: all .350s ease-out;
+    }
+}
 
 
 .see-more-buttons {
