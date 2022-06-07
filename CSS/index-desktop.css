@@ -462,21 +462,25 @@ header {
     transition: all .535s ease-out;
 }
 
+.service-cards:nth-child(1) {
+background-image: url(/assets/thermocol.jpg);
+}
+.service-cards:nth-child(2) {
+background-image: url(/assets/pvc.jpg);
+}
+.service-cards:nth-child(3) {
+background-image: url(/assets/wood.jpg);
+}
+.service-cards:nth-child(4) {
+background-image: url(/assets/gypsum-board.jpg);
+}
+
 /* media query for services card */
 @media only screen and (max-width: 760px) {
     .service-cards {
         margin-block-start: 100px;
-        min-height: unset;
-        max-height: unset;
-        min-width: unset;
-        max-width: unset;
         height: 500px;
         width: clamp(250px, 50vw, 330px);
-        border: 1px solid var(--light-grey);
-        border-radius: 20px;
-        background-color: #fff;
-        background-image: url(/assets/temp-img.png);
-        background-repeat: no-repeat;
         background-position: 50% 0%;
         background-size: 101%;
         transition: all .535s ease-out;
@@ -505,9 +509,9 @@ header {
 
 
 /* media query for service-cards alignment */
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 660px) {
     .service-card-texts {
-        margin-block-start: 100%;
+        margin-block-start: 105%;
     }
 }
 
@@ -678,4 +682,3 @@ header {
         /* background-position: ; */
     }
 }
-

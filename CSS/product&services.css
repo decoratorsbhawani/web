@@ -38,12 +38,14 @@ html {
 
 .service-cards {
     margin-block-start: 100px;
-    min-height: 200px;
-    max-height: 290px;
+    /* min-height: 200px;
+    max-height: 310px;
     height: 26.851vh;
     min-width: 650px;
-    max-width: 845px;
-    width: 44.01vw;
+    max-width: 700px;
+    width: 44.01vw; */
+    width: clamp(650px, 20vw, 700px);
+    height: 300px;
     border: 1px solid var(--light-grey);
     border-radius: 20px;
     background-color: #fff;
@@ -55,9 +57,10 @@ html {
 
 /* media query for services card */
 @media only screen and (max-width: 760px) {
-    #services{
-    background-size: 100%;
+    #services {
+        background-size: 100%;
     }
+
     .service-cards {
         margin-block-start: 100px;
         min-height: unset;
@@ -79,17 +82,21 @@ html {
 .service-cards:nth-child(n) {
     background-size: contain;
 }
-/* 
-.service-cards:nth-child(1) {
-    background-image: url(../assets/service-images/pop.jpg);
-} */
 
 .service-cards:nth-child(1) {
-    background-image: url(../assets/service-images/gypsum-board_redused.jpg);
+    background-image: url(../assets/gypsum-board.jpg);
 }
 
-.service-cards:nth-child(5) {
-    background-image: url(../assets/service-images/t-section.jpg);
+.service-cards:nth-child(2) {
+    background-image: url(../assets/thermocol.jpg);
+}
+
+.service-cards:nth-child(3) {
+    background-image: url(../assets/pvc.jpg);
+}
+
+.service-cards:nth-child(4) {
+    background-image: url(../assets/wood.jpg);
 }
 
 .service-cards:first-child {
@@ -132,9 +139,9 @@ html {
     }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 660px) {
     .service-card-texts {
-        margin-block-start: 100%;
+        margin-block-start: 105%;
     }
 }
 
@@ -198,10 +205,13 @@ html {
 @media only screen and (max-width: 1260px) {
     #all-products {
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 760px) {
 
     #all-products {
         grid-template-columns: 1fr;
@@ -245,6 +255,7 @@ html {
     justify-content: stretch;
     align-items: end;
     background-size: cover;
+    background-color: #7A98CC;
     /* cursor: pointer; */
 }
 
@@ -252,46 +263,60 @@ html {
     background-image: url(/assets/product-images/bit-corner.jpg);
     background-position: 0% 50%;
 }
+
 .product-cards:nth-child(2) {
     background-image: url(/assets/product-images/Cornish.jpg);
 }
+
 .product-cards:nth-child(3) {
     background-image: url(/assets/product-images/imported-cornish.jpg);
 }
+
 .product-cards:nth-child(4) {
     background-image: url(/assets/product-images/bracket.jpg);
 }
+
 .product-cards:nth-child(5) {
     background-image: url(/assets/product-images/central-panel.jpg);
     /* background-position: 0% -50%; */
 }
+
 .product-cards:nth-child(6) {
     background-image: url(/assets/product-images/star-screw.jpg);
 }
+
 .product-cards:nth-child(7) {
     background-image: url(/assets/product-images/corner-corlesh.jpg);
 }
+
 .product-cards:nth-child(8) {
     background-image: url(/assets/product-images/imported-dom.jpg);
 }
+
 .product-cards:nth-child(9) {
     background-image: url(/assets/product-images/pillers.jpg);
 }
+
 .product-cards:nth-child(10) {
     background-image: url(/assets/product-images/bit.png);
 }
+
 .product-cards:nth-child(11) {
     background-image: url(/assets/product-images/gripper.jpg);
 }
+
 .product-cards:nth-child(12) {
     background-image: url(/assets/product-images/joint-fiber-glass-tape.jpg);
 }
+
 .product-cards:nth-child(13) {
     background-image: url(/assets/product-images/pvc-sheets.jpg);
 }
+
 .product-cards:nth-child(14) {
     background-image: url(/assets/product-images/t-section.jpg);
 }
+
 .product-cards:nth-child(15) {
     background-image: url(/assets/product-images/pop-sheets.jpg);
 }
