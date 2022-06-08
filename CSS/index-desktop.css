@@ -455,7 +455,7 @@ header {
     border: 1px solid var(--light-grey);
     border-radius: 20px;
     background-color: #fff;
-    background-image: url(/assets/temp-img.png);
+    background-image: url('https://source.unsplash.com/random/300×300/');
     background-repeat: no-repeat;
     background-position: 0% 50%;
     background-size: contain;
@@ -680,7 +680,7 @@ header {
 .work-images-slideshow {
     padding-block-start: 150px !important;
     padding-block-end: 100px;
-    background-image: url(../assets/main-page-gallery-section-bg.png);
+    background-image: url(../assets/main-page-gallery-section-bg.jpg);
     background-repeat: no-repeat;
     background-position: top;
 }

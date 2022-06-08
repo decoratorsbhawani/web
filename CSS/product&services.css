@@ -21,7 +21,7 @@ html {
 
 
 #hero-section {
-    background-image: url(/assets/services-page-image.png);
+    background-image: url(/assets/services-page-image.jpg);
 }
 
 #services {
@@ -49,7 +49,7 @@ html {
     border: 1px solid var(--light-grey);
     border-radius: 20px;
     background-color: #fff;
-    background-image: url(/assets/temp-img.png);
+    background-image: url('https://source.unsplash.com/random/300×300/');
     background-repeat: no-repeat;
     background-position: 0% 50%;
     transition: all .535s ease-out;
@@ -72,7 +72,7 @@ html {
         border: 1px solid var(--light-grey);
         border-radius: 20px;
         background-color: #fff;
-        background-image: url(/assets/temp-img.png);
+        background-image: url('https://source.unsplash.com/random/300×400/');
         background-repeat: no-repeat;
         background-position: 50% 0%;
         transition: all .535s ease-out;
@@ -253,7 +253,7 @@ html {
     border: 5px solid white;
     border-radius: 10px;
     background-color: #fff;
-    background-image: url(/assets/temp-product-img.png);
+    background-image: url('https://source.unsplash.com/random/400×450/');
     background-repeat: no-repeat;
     background-position: top;
     box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, .35);
