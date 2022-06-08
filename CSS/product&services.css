@@ -258,9 +258,11 @@ html {
     background-position: top;
     box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, .35);
     transition: all .350s ease-out;
+    /* flex-wrap: wrap; */
     display: flex;
-    justify-content: stretch;
-    align-items: end;
+    flex-direction: column-reverse;
+    /* justify-content: stretch; */
+    /* align-content: flex-end; */
     background-size: cover;
     background-color: #7A98CC;
     /* cursor: pointer; */
