@@ -383,10 +383,15 @@ footer {
     row-gap: 10px;
 }
 
-#location,
 #call-us,
+#location,
 #email-us {
     display: flex;
+}
+
+#location,
+#email-us {
+    cursor: pointer;
 }
 
 .contact-details {
@@ -683,8 +688,8 @@ textarea {
 }
 
 #contact-info>#location,
-#call-us,
-#email-us {
+#contact-info>#call-us,
+#contact-info>#email-us {
     cursor: pointer;
 }
 
