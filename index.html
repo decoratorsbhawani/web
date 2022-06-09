@@ -38,15 +38,15 @@
                     <div class="main-heading">Send Us A Message</div>
                     <div class="text-box">
                         <label for="name">Your Name</label><br>
-                        <input type="text" name="name" id="user-name">
+                        <input type="text" name="name" id="user-name" required>
                     </div>
                     <div class="text-box">
                         <label for="mail">Mail</label><br>
-                        <input type="email" name="email" id="user-main">
+                        <input type="email" name="email" id="user-main" required>
                     </div>
                     <div class="text-box">
                         <label for="message">Message</label><br>
-                        <textarea name="message" id="user-message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="user-message" cols="30" rows="10" required></textarea>
                     </div>
                     <button class="send-mail-btn" type="submit">Send</button>
                 </form>
@@ -113,8 +113,8 @@
     <!--Main Landing Page Starts-->
     <div id="first-body">
         <div id="header" class="hide-header">
-            <img id="header-logo" src="assets/svg/Logo.svg" alt="Bhawani Decorators Logo">
-            <img id="header-title" style="cursor: unset;" src="assets/svg/Title-2.png" alt="Title of Page">
+            <img id="header-logo" onclick="scrollToTop()" src="assets/svg/Logo.svg" alt="Bhawani Decorators Logo">
+            <img id="header-title" onclick="scrollToTop()" src="assets/svg/Title-2.png" alt="Title of Page">
             <div id="header-nav">
                 <a class="nav-links" href="pages/product&service.html">Services</a>&nbsp;&nbsp;
                 <a class="nav-links" href="pages/gallery.html">Gallery</a>&nbsp;&nbsp;
@@ -124,7 +124,7 @@
             </div>
         </div>
         <header>
-            <img id="header-logo" src="assets/svg/Logo-2.svg" alt="Bhawani Decorators Logo">
+            <img id="header-logo" style="cursor: unset;" src="assets/svg/Logo-2.svg" alt="Bhawani Decorators Logo">
             <img id="header-title" style="cursor: unset;" src="assets/svg/Title-2.png" alt="Title of Page">
             <div id="header-nav">
                 <a class="nav-links" href="pages/product&service.html">Services</a>&nbsp;&nbsp;
@@ -285,9 +285,10 @@
         <div id="footer-title">BHAWANI DECORATORS</div>
         <div id="footer-links">
             <div id="contact">
-                <div id="location" onclick="blankRedirect('https\://maps.google.com/?q=Science College Road, Chantidih, Bilaspur, Chhattisgarh')">
+                <div id="location"
+                    onclick="blankRedirect('https\://maps.google.com/?q=Science College Road, Chantidih, Bilaspur, Chhattisgarh')">
                     <img class="contact-icon" src="assets/svg/location.svg" alt="Location Icon" />
-                    <div class="contact-details" >
+                    <div class="contact-details">
                         <div class="detail-title">Address</div>
                         <div class="detail-subtitle">Science College Road, Chantidih, Bilaspur, Chhattisgarh</div>
                     </div>
@@ -300,7 +301,7 @@
                         <div class="detail-subtitle">+91-98279 17456</div>
                     </div>
                 </div>
-                <div id="email-us">
+                <div id="email-us" onclick="redirectTo('mailto:bhdecoretors214@gmail.com')">
                     <img class="contact-icon" src="assets/svg/email.svg" alt="Location Icon" />
                     <div class="contact-details">
                         <div class="detail-title">Email Us</div>

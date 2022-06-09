@@ -59,10 +59,14 @@ header,
     }
 }
 
+#header-logo,
+#header-title {
+    cursor: pointer;
+}
+
 #header-title {
     justify-self: center;
     align-self: center;
-    cursor: pointer;
 }
 
 /* media query for header title */

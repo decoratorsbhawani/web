@@ -16,7 +16,7 @@ function showDivs(n) {
         }
         x[slideIndex - 1].style.display = "block";
     } catch (error) {
-        console.log("Error Occurs: " + error)
+        // console.log("Error Occurs: " + error)S
     }
 }
 

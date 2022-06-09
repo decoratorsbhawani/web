@@ -47,11 +47,18 @@ function scrollFunction() {
 
         if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
             document.getElementById("header").classList.add("show-header");
-            console.log('dont know');
         } else {
             document.getElementById("header").classList.remove("show-header");
         }
     } catch (error) {
         //  console.log("Error Occured: "+error)   
     }
-} 
+}
+
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
