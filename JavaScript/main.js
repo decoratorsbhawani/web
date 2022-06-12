@@ -1,9 +1,3 @@
-
-function getData() {
-    console.log("clientWidth", document.documentElement.clientWidth);
-    console.log("clientHeight", document.documentElement.clientHeight);
-}
-
 function redirectHome() {
     document.location.href = "/";
 }
@@ -32,9 +26,6 @@ function toggleMobileNav() {
 function animateRedirectTo(n) {
     toggleMobileNav();
     setTimeout(redirectTo, 360, n);
-}
-
-function sendMail() {
 }
 
 
