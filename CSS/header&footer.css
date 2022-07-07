@@ -921,3 +921,14 @@ textarea {
 img {
     user-select: none;
 }
+
+.ref-link{
+    color: inherit;
+    text-decoration: none;
+    transition: color 200ms ease-out;
+}
+
+.ref-link:hover{
+    color: #ffdd60;
+    transition: color 200ms ease-out;
+}
