@@ -923,6 +923,7 @@ img {
 }
 
 .ref-link{
+    display: contents;
     color: inherit;
     text-decoration: none;
     transition: color 200ms ease-out;
